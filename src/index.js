@@ -6,7 +6,7 @@ const random = () => Math.floor(Math.random() * (maximum - minimum)) + minimum;
 
 const createImageNode = () => {
     const container = document.createElement('div');
-    container.className = "p-4";
+    container.className = "p-4 mx-auto";
 
     const imagen = document.createElement('img');
     imagen.className = "mx-auto";
@@ -21,7 +21,11 @@ const createImageNode = () => {
 const nuevaImagen = createImageNode();
 const mountNode = document.getElementById("imagenes");
 
+//Botones
 const addButton = document.querySelector('button');
+addButton.className = "btnAdd";
+const cleanButton = document.querySelector("button[type='button']");
+cleanButton.className = "btnClean";
 
 //Agregar Imagen
 const addImage = () => {
@@ -30,4 +34,10 @@ const addImage = () => {
     registerImage(newImage);
 };
 
+//Limpiar
+const cleanScreen = () => {
+    mountNode.innerHTML = "";
+};
+
 addButton.addEventListener("click", addImage);
+cleanButton.addEventListener("click", cleanScreen);

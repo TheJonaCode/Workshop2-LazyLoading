@@ -1,3 +1,27 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+.btnAdd {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background-color: #89c2d9;
+    width: 120px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+.btnAdd:hover {
+    background-color: #61a5c2;
+}
+
+.btnClean {
+    background-color: #e5383b;
+    width: 120px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+.btnClean:hover {
+    background-color: #ba181b;
+}
