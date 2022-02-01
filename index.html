@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/Workshop2-LazyLoading/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/_dist_/index.css" />
+    <link rel="stylesheet" type="text/css" href="/Workshop2-LazyLoading/_dist_/index.css" />
     <title>Lazy Loading</title>
 </head>
 
@@ -22,10 +22,15 @@
             </h3>
 
             <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
-                Use this template to build awesome websites using Snowpack and Tailwind. It also includes Prettier and automatic publish to GitHub pages using GitHub Actions. Learn more:
+                Plugin en vanilla JavaScript para cargar imagenes con Lazy Load.
             </p>
 
-            <button class="p-3">Agregar Imagen</button>
+            <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
+                Las imagenes agregadas no se descargarán hasta que sean visibles en la pantalla
+            </p>
+
+            <button>Agregar Imagen</button>
+            <button type="button">Limpiar</button>
             <div id="imagenes">
             </div>
 
@@ -33,7 +38,7 @@
     </div>
 
     <!-- Add more scripts here -->
-    <script type="module" src="/_dist_/index.js"></script>
+    <script type="module" src="/Workshop2-LazyLoading/_dist_/index.js"></script>
 </body>
 
 </html>
